@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+   <!-- <meta http-equiv="Content-Security-Policy" content="default-src * 'self' blob: data: gap:; style-src * 'self' 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * 'self' 'unsafe-inline' blob: data: gap:; connect-src 'self' * 'unsafe-inline' blob: data: gap:; frame-src * 'self' blob: data: gap:;"> -->
+
+    <title>Screenpeek</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+      nonce="1"
+    />
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- <nav class="navbar" role="navigation" aria-label="main navigation"> -->
+        
+          <div class="navbar-item" id="title-bar">
+            <div class="navbar-item" id="drag-bar" style="-webkit-app-region: drag" nonce="1">
+            </div>
+            <a class="title-bar-element" id="minim"><img src="./static/minim.svg" class="title-bar-image" id="minim-image"></img></a>
+            <a class="title-bar-element" id="fullscr"><img src="./static/fullscr.svg" class="title-bar-image" ></img></a>
+            <a class="title-bar-element" id="X"><img src="./static/X.svg" class="title-bar-image"></img></a>
+            </div>
+    <!-- </nav> -->
+    <div class="sidebar">
+      <div id="logo-container">
+        <img src="./static/logo.svg" id="logo"/>
+      </div>
+      <a class="sidebar-element" id="hexicon-tile">
+        <img class="sidebar-image" src="./static/hexicon.svg" id="hexicon"/>
+      </a>
+      <a class="sidebar-element" id="multihex-tile">
+        <img class="sidebar-image" src="./static/multihex.svg" id="multihex"/>
+      </a>
+      <a class="sidebar-element" id="orang-tile">
+        <img class="sidebar-image" src="./static/orang.png" id="orang"/>
+      </a>
+      <a class="sidebar-element" id="button4-tile">
+        <img> 
+      </a>
+
+    </div>
+    <div class="page-container">
+      <div class="page" id="hexicon-page">
+        <video id="video"></video>
+        <canvas id="c1"></canvas>
+        <button id="videoSelectBtn">aa</button>
+        <label for="Xval">X:</label>
+        <input type="number" id="Xval" name="Xval">
+        <label for="Yval">Y:</label>
+        <input type="number" id="Yval" name="Yval">
+        <input type="button" value="Get" id="getBtn"></input>
+        <input type="button" value="X" id="unsetSrc"></input>
+        <input type="button" value="poll" id="pollSrc"></input>
+      </div>
+      <div class="page" id="multihex-page">
+        <div id="sequence-builder-header">
+          <input id="sequence-name-container" value="New macro">
+          <i class="arrow down"></i>
+        </div>
+        <div id="sequence-builder-container">
+        <div id="sequence-builder">
+          <button id="robotjsTest">move mouse</button>
+        </div>
+      </div>
+        
+      </div>
+      <div class="page" id="orang-page">
+        orange
+      </div>
+      <div class="page" id="button4-page">
+        Page 4
+      </div>
+    </div>
+  </body>
+</html>
